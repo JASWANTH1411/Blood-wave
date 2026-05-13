@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Find Donors</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+    <div class="find-container">
+
+        <!-- ❤️ Title -->
+        <h1>
+            Find Blood Donors Nearby 🩸
+        </h1>
+
+        <!-- 🔍 Search Box -->
+        <div class="search-box">
+
+            <!-- Blood Group -->
+            <select id="bloodGroup">
+
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+
+            </select>
+
+            <!-- City -->
+            <input type="text"
+                   id="city"
+                   placeholder="Enter City">
+
+            <!-- Pincode -->
+            <input type="text"
+                   id="pincode"
+                   placeholder="Enter Pincode">
+
+            <!-- Search Button -->
+            <button onclick="loadDonors()">
+
+                Search Donors
+
+            </button>
+
+        </div>
+
+        <!-- 🗺️ MAP -->
+        <div id="map"></div>
+
+        <!-- 👨‍⚕️ DONOR LIST -->
+        <div id="donorList"></div>
+
+    </div>
+
+    <!-- Google Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

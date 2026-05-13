@@ -1,0 +1,621 @@
+/* =======================================================
+   🌍 GLOBAL STYLES
+======================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: 'Poppins', sans-serif;
+
+    min-height: 100vh;
+
+    background:
+    linear-gradient(
+        135deg,
+        #ff9a9e,
+        #fad0c4,
+        #fad0c4
+    );
+
+    overflow-x: hidden;
+
+    color: #222;
+
+}
+
+/* =======================================================
+   🔴 BACKGROUND CIRCLES
+======================================================= */
+
+.circle {
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    filter: blur(70px);
+
+    z-index: 0;
+
+}
+
+.circle1 {
+
+    width: 300px;
+    height: 300px;
+
+    background: rgba(255,0,0,0.25);
+
+    top: -80px;
+    left: -80px;
+
+}
+
+.circle2 {
+
+    width: 250px;
+    height: 250px;
+
+    background: rgba(255,255,255,0.3);
+
+    bottom: -60px;
+    right: -60px;
+
+}
+
+/* =======================================================
+   🏠 INDEX PAGE
+======================================================= */
+
+.main-container {
+
+    position: relative;
+
+    z-index: 1;
+
+    width: 90%;
+    max-width: 900px;
+
+    margin: 60px auto;
+
+    padding: 50px;
+
+    border-radius: 25px;
+
+    background: rgba(255,255,255,0.25);
+
+    backdrop-filter: blur(12px);
+
+    box-shadow:
+    0 8px 32px rgba(0,0,0,0.2);
+
+    text-align: center;
+
+}
+
+/* ❤️ LOGO */
+
+.logo {
+
+    font-size: 70px;
+
+    margin-bottom: 10px;
+
+    animation: pulse 1.5s infinite;
+
+}
+
+/* 🏥 TITLE */
+
+.main-container h1 {
+
+    font-size: 55px;
+
+    color: darkred;
+
+    margin-bottom: 10px;
+
+}
+
+/* 📖 SUBTITLE */
+
+.subtitle {
+
+    color: #333;
+
+    font-size: 18px;
+
+    margin-bottom: 40px;
+
+}
+
+/* =======================================================
+   🚀 BUTTONS
+======================================================= */
+
+.button-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    margin-bottom: 40px;
+
+    flex-wrap: wrap;
+
+}
+
+.btn {
+
+    text-decoration: none;
+
+    padding:
+    15px 50px;
+
+    border-radius: 15px;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+
+}
+
+/* 🔴 REGISTER */
+
+.register-btn {
+
+    background: darkred;
+
+    color: white;
+
+}
+
+.register-btn:hover {
+
+    transform: translateY(-5px);
+
+    background: red;
+
+}
+
+/* ⚫ LOGIN */
+
+.login-btn {
+
+    background: black;
+
+    color: white;
+
+}
+
+.login-btn:hover {
+
+    transform: translateY(-5px);
+
+    background: #333;
+
+}
+
+/* =======================================================
+   ✨ FEATURES
+======================================================= */
+
+.features {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+}
+
+.feature-card {
+
+    padding:
+    15px 25px;
+
+    border-radius: 15px;
+
+    background:
+    rgba(255,255,255,0.45);
+
+    font-weight: 500;
+
+    transition: 0.3s;
+
+}
+
+.feature-card:hover {
+
+    transform: scale(1.08);
+
+}
+
+/* =======================================================
+   ❤️ PULSE ANIMATION
+======================================================= */
+
+@keyframes pulse {
+
+    0% {
+
+        transform: scale(1);
+
+    }
+
+    50% {
+
+        transform: scale(1.15);
+
+    }
+
+    100% {
+
+        transform: scale(1);
+
+    }
+
+}
+
+/* =======================================================
+   📦 FORM CONTAINERS
+======================================================= */
+
+.container {
+
+    width: 90%;
+    max-width: 420px;
+
+    margin: 60px auto;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    background: rgba(255,255,255,0.25);
+
+    backdrop-filter: blur(12px);
+
+    box-shadow:
+    0 8px 25px rgba(0,0,0,0.15);
+
+}
+
+/* =======================================================
+   🏷️ HEADINGS
+======================================================= */
+
+h1 {
+
+    color: darkred;
+
+    margin-bottom: 15px;
+
+}
+
+h2 {
+
+    color: darkred;
+
+    margin-bottom: 20px;
+
+}
+
+/* =======================================================
+   📝 INPUTS
+======================================================= */
+
+input,
+select {
+
+    width: 100%;
+
+    padding: 14px;
+
+    margin-top: 15px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    outline: none;
+
+    font-size: 16px;
+
+    background: rgba(255,255,255,0.8);
+
+    transition: 0.3s;
+
+}
+
+input:focus,
+select:focus {
+
+    transform: scale(1.02);
+
+    box-shadow:
+    0 0 8px rgba(255,0,0,0.3);
+
+}
+
+/* =======================================================
+   🔘 BUTTONS
+======================================================= */
+
+button {
+
+    width: 100%;
+
+    padding: 14px;
+
+    margin-top: 20px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: darkred;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+button:hover {
+
+    background: red;
+
+    transform: translateY(-3px);
+
+}
+
+/* =======================================================
+   🔗 LINKS
+======================================================= */
+
+a {
+
+    display: block;
+
+    margin-top: 18px;
+
+    text-decoration: none;
+
+    color: darkred;
+
+    font-weight: 500;
+
+}
+
+a:hover {
+
+    text-decoration: underline;
+
+}
+
+/* =======================================================
+   🔍 FIND DONOR PAGE
+======================================================= */
+
+.find-container {
+
+    width: 92%;
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding-top: 40px;
+
+    padding-bottom: 40px;
+
+}
+
+.find-container h1 {
+
+    text-align: center;
+
+    color: darkred;
+
+    margin-bottom: 30px;
+
+    font-size: 42px;
+
+}
+
+/* =======================================================
+   🔎 SEARCH BOX
+======================================================= */
+
+.search-box {
+
+    background: rgba(255,255,255,0.25);
+
+    backdrop-filter: blur(12px);
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 20px;
+
+    box-shadow:
+    0 8px 20px rgba(0,0,0,0.12);
+
+}
+
+/* SEARCH INPUTS */
+
+.search-box select,
+.search-box input {
+
+    width: 220px;
+
+    margin: 0;
+
+}
+
+/* SEARCH BUTTON */
+
+.search-box button {
+
+    width: 180px;
+
+    margin: 0;
+
+}
+
+/* =======================================================
+   🗺️ GOOGLE MAP
+======================================================= */
+
+#map {
+
+    width: 100%;
+
+    height: 450px;
+
+    margin-top: 30px;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,0.15);
+
+}
+
+/* =======================================================
+   🩸 DONOR LIST
+======================================================= */
+
+#donorList {
+
+    margin-top: 30px;
+
+    display: grid;
+
+    grid-template-columns:
+    repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 20px;
+
+}
+
+/* =======================================================
+   🧾 DONOR CARD
+======================================================= */
+
+.donor-card {
+
+    background: rgba(255,255,255,0.35);
+
+    padding: 22px;
+
+    border-radius: 18px;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,0.1);
+
+    transition: 0.3s;
+
+    text-align: left;
+
+}
+
+.donor-card:hover {
+
+    transform: translateY(-5px);
+
+}
+
+.donor-card h3 {
+
+    color: darkred;
+
+    margin-bottom: 12px;
+
+}
+
+.donor-card p {
+
+    margin: 8px 0;
+
+    color: #333;
+
+}
+
+/* =======================================================
+   📱 RESPONSIVE DESIGN
+======================================================= */
+
+@media(max-width: 768px) {
+
+    .main-container {
+
+        padding: 30px 20px;
+
+    }
+
+    .main-container h1 {
+
+        font-size: 40px;
+
+    }
+
+    .button-container {
+
+        flex-direction: column;
+
+        align-items: center;
+
+    }
+
+    .btn {
+
+        width: 100%;
+
+        max-width: 300px;
+
+    }
+
+    .search-box {
+
+        flex-direction: column;
+
+    }
+
+    .search-box select,
+    .search-box input,
+    .search-box button {
+
+        width: 100%;
+
+    }
+
+}
